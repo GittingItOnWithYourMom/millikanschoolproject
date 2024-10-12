@@ -1,0 +1,16 @@
+body{
+    background-color: white;
+    height: 3000px;
+    width: 700px;
+}
+#ball{
+    position: absolute;
+    z-index: 0;
+}
+#box{
+    position: absolute;
+    background-color: greenyellow;
+    height: 100px;
+    width: 100px;
+    z-index: 0;
+}

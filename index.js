@@ -44,7 +44,7 @@ setInterval(() => {
 
     physics_objects.forEach((object) => {
         var bottom = window.innerHeight - 105
-        var wall = window.innerWidth - 120
+        var wall = window.innerWidth - 130
         var offset = 0
         const limiter = 0.00001
 

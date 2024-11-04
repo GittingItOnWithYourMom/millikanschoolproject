@@ -86,12 +86,12 @@ setInterval(() => {
         }
 
         var ForceK = normalX * object.friction
-        //if (object.accX > ForceK){
-        //    ForceK = normalX * object.friction
-        //}
+        if (object.accX < ForceK){
+            ForceK = 0
+        }
         console.log(normalX)
         object.accY = 9.8
-        object.accX = 0 + ForceK
+        object.accX = ForceK
 
         object.posY = object.initialY + object.velY*object.deltaTY*limiter + object.accY*object.deltaTY*object.deltaTY*limiter + offset
         object.posX = object.initialX + object.velX*object.deltaTX*limiter + object.accX*object.deltaTX*object.deltaTX*limiter

@@ -10,3 +10,9 @@ body{
     z-index: 0;
     height: 100px;
 }
+.debug{
+  align-content: center;
+  color: black;
+  position: absolute;
+  z-index: 1;
+}
